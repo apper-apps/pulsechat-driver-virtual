@@ -1,16 +1,35 @@
-import React, { useState } from 'react';
-import SearchBar from '@/components/molecules/SearchBar';
-import ContactItem from '@/components/molecules/ContactItem';
-import ApperIcon from '@/components/ApperIcon';
-import { motion, AnimatePresence } from 'framer-motion';
-import OutsideClickHandler from 'react-outside-click-handler';
-const ContactList = ({ contacts }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [showKebabMenu, setShowKebabMenu] = useState(false);
-  const filteredContacts = contacts.filter(contact =>
-    contact.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    contact.status.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+import React, { useEffect, useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
+import ContactItem from "@/components/molecules/ContactItem";
+import SearchBar from "@/components/molecules/SearchBar";
+
+function ContactList({ contacts }) {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [showKebabMenu, setShowKebabMenu] = useState(false)
+  const kebabMenuRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (kebabMenuRef.current && !kebabMenuRef.current.contains(event.target)) {
+        setShowKebabMenu(false)
+      }
+    }
+
+    if (showKebabMenu) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+}, [showKebabMenu])
+
+  // Filter contacts based on search term
+  const filteredContacts = contacts?.filter((contact) =>
+    contact.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    contact.status.toLowerCase().includes(searchTerm.toLowerCase())
+  ) || [];
 
   // Group contacts by first letter
   const groupedContacts = filteredContacts.reduce((groups, contact) => {
@@ -34,70 +53,68 @@ const ContactList = ({ contacts }) => {
 <button className="p-2 hover:bg-surface-100 rounded-xl transition-colors group">
               <ApperIcon name="UserPlus" size={20} className="text-gray-600 group-hover:text-primary-600" />
             </button>
-            <div className="relative">
-              <OutsideClickHandler onOutsideClick={() => setShowKebabMenu(false)}>
-                <button 
-                  onClick={() => setShowKebabMenu(!showKebabMenu)}
-                  className="p-2 hover:bg-surface-100 rounded-xl transition-colors group"
-                >
-                  <ApperIcon name="MoreVertical" size={20} className="text-gray-600 group-hover:text-primary-600" />
-                </button>
-                
-                <AnimatePresence>
-                  {showKebabMenu && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.95, y: -10 }}
-                      animate={{ opacity: 1, scale: 1, y: 0 }}
-                      exit={{ opacity: 0, scale: 0.95, y: -10 }}
-                      transition={{ duration: 0.15 }}
-                      className="absolute right-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-surface-200 py-2 z-50"
+<div className="relative" ref={kebabMenuRef}>
+              <button 
+                onClick={() => setShowKebabMenu(!showKebabMenu)}
+                className="p-2 hover:bg-surface-100 rounded-xl transition-colors group"
+              >
+                <ApperIcon name="MoreVertical" size={20} className="text-gray-600 group-hover:text-primary-600" />
+              </button>
+              
+              <AnimatePresence>
+                {showKebabMenu && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.95, y: -10 }}
+                    transition={{ duration: 0.15 }}
+                    className="absolute right-0 top-full mt-2 w-56 bg-white rounded-lg shadow-lg border border-surface-200 py-2 z-50"
+                  >
+                    <button 
+                      onClick={() => setShowKebabMenu(false)}
+                      className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
                     >
-                      <button 
-                        onClick={() => setShowKebabMenu(false)}
-                        className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
-                      >
-                        <ApperIcon name="Users" size={18} className="text-gray-600" />
-                        <span className="text-gray-900">New group</span>
-                      </button>
-                      <button 
-                        onClick={() => setShowKebabMenu(false)}
-                        className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
-                      >
-                        <ApperIcon name="Radio" size={18} className="text-gray-600" />
-                        <span className="text-gray-900">New broadcast</span>
-                      </button>
-                      <button 
-                        onClick={() => setShowKebabMenu(false)}
-                        className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
-                      >
-                        <ApperIcon name="Laptop" size={18} className="text-gray-600" />
-                        <span className="text-gray-900">Linked devices</span>
-                      </button>
-                      <button 
-                        onClick={() => setShowKebabMenu(false)}
-                        className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
-                      >
-                        <ApperIcon name="Star" size={18} className="text-gray-600" />
-                        <span className="text-gray-900">Starred messages</span>
-                      </button>
-                      <div className="h-px bg-surface-200 my-2"></div>
-                      <button 
-                        onClick={() => setShowKebabMenu(false)}
-                        className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
-                      >
-                        <ApperIcon name="Settings" size={18} className="text-gray-600" />
-                        <span className="text-gray-900">Settings</span>
-                      </button>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </OutsideClickHandler>
+                      <ApperIcon name="Users" size={18} className="text-gray-600" />
+                      <span className="text-gray-900">New group</span>
+                    </button>
+                    <button 
+                      onClick={() => setShowKebabMenu(false)}
+                      className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
+                    >
+                      <ApperIcon name="Radio" size={18} className="text-gray-600" />
+                      <span className="text-gray-900">New broadcast</span>
+                    </button>
+                    <button 
+                      onClick={() => setShowKebabMenu(false)}
+                      className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
+                    >
+                      <ApperIcon name="Laptop" size={18} className="text-gray-600" />
+                      <span className="text-gray-900">Linked devices</span>
+                    </button>
+                    <button 
+                      onClick={() => setShowKebabMenu(false)}
+                      className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
+                    >
+                      <ApperIcon name="Star" size={18} className="text-gray-600" />
+                      <span className="text-gray-900">Starred messages</span>
+                    </button>
+                    <div className="h-px bg-surface-200 my-2"></div>
+                    <button 
+                      onClick={() => setShowKebabMenu(false)}
+                      className="w-full px-4 py-3 text-left hover:bg-surface-50 transition-colors flex items-center space-x-3"
+                    >
+                      <ApperIcon name="Settings" size={18} className="text-gray-600" />
+                      <span className="text-gray-900">Settings</span>
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           </div>
         </div>
-        <SearchBar 
-          value={searchQuery}
-          onChange={setSearchQuery}
+<SearchBar 
+          value={searchTerm}
+          onChange={setSearchTerm}
           placeholder="Search contacts..."
         />
       </div>
@@ -108,8 +125,8 @@ const ContactList = ({ contacts }) => {
           <span className="text-gray-600">
             {filteredContacts.length} contact{filteredContacts.length !== 1 ? 's' : ''}
           </span>
-          <span className="text-accent-500 font-medium">
-            {contacts.filter(c => c.isOnline).length} online
+<span className="text-accent-500 font-medium">
+            {contacts?.filter(c => c.isOnline).length || 0} online
           </span>
         </div>
       </div>
@@ -123,7 +140,7 @@ const ContactList = ({ contacts }) => {
             </div>
             <h3 className="font-semibold text-gray-900 mb-2">No contacts found</h3>
             <p className="text-gray-600 text-sm">
-              {searchQuery ? 'Try a different search term' : 'Add some contacts to get started'}
+              {searchTerm ? 'Try a different search term' : 'Add some contacts to get started'}
             </p>
           </div>
         ) : (
