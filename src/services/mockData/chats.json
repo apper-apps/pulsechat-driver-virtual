@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "participants": [
+      {
+        "id": "current-user",
+        "name": "John Doe"
+      },
+      {
+        "id": "user-2",
+        "name": "Sarah Wilson",
+        "isOnline": true,
+        "lastSeen": "2024-01-15T10:30:00Z"
+      }
+    ],
+    "lastMessage": {
+      "Id": 15,
+      "senderId": "user-2",
+      "content": "Perfect! See you at 3 PM then. I'll bring the project files.",
+      "type": "text",
+      "timestamp": "2024-01-15T10:45:00Z",
+      "status": "read"
+    },
+    "unreadCount": 0,
+    "isPinned": true,
+    "isArchived": false,
+    "theme": {
+      "background": "#ffffff",
+      "accent": "#00a884"
+    }
+  },
+  {
+    "Id": 2,
+    "participants": [
+      {
+        "id": "current-user",
+        "name": "John Doe"
+      },
+      {
+        "id": "user-3",
+        "name": "Mike Chen",
+        "isOnline": false,
+        "lastSeen": "2024-01-15T09:15:00Z"
+      }
+    ],
+    "lastMessage": {
+      "Id": 25,
+      "senderId": "current-user",
+      "content": "Thanks for the code review! I'll implement those changes today.",
+      "type": "text",
+      "timestamp": "2024-01-15T09:20:00Z",
+      "status": "delivered"
+    },
+    "unreadCount": 0,
+    "isPinned": false,
+    "isArchived": false,
+    "theme": {
+      "background": "#ffffff",
+      "accent": "#25d366"
+    }
+  },
+  {
+    "Id": 3,
+    "participants": [
+      {
+        "id": "current-user",
+        "name": "John Doe"
+      },
+      {
+        "id": "user-4",
+        "name": "Emily Rodriguez",
+        "isOnline": true,
+        "lastSeen": "2024-01-15T10:30:00Z"
+      }
+    ],
+    "lastMessage": {
+      "Id": 35,
+      "senderId": "user-4",
+      "content": "The design mockups look amazing! 🎨 Can we schedule a call to discuss the implementation details?",
+      "type": "text",
+      "timestamp": "2024-01-15T08:45:00Z",
+      "status": "read"
+    },
+    "unreadCount": 2,
+    "isPinned": false,
+    "isArchived": false,
+    "theme": {
+      "background": "#ffffff",
+      "accent": "#ff6b35"
+    }
+  },
+  {
+    "Id": 4,
+    "participants": [
+      {
+        "id": "current-user",
+        "name": "John Doe"
+      },
+      {
+        "id": "user-5",
+        "name": "David Park",
+        "isOnline": false,
+        "lastSeen": "2024-01-14T18:30:00Z"
+      }
+    ],
+    "lastMessage": {
+      "Id": 45,
+      "senderId": "user-5",
+      "content": "Got it! I'll update the database schema and let you know when it's ready for testing.",
+      "type": "text",
+      "timestamp": "2024-01-14T17:15:00Z",
+      "status": "read"
+    },
+    "unreadCount": 0,
+    "isPinned": false,
+    "isArchived": false,
+    "theme": {
+      "background": "#ffffff",
+      "accent": "#8e44ad"
+    }
+  },
+  {
+    "Id": 5,
+    "participants": [
+      {
+        "id": "current-user",
+        "name": "John Doe"
+      },
+      {
+        "id": "user-6",
+        "name": "Lisa Zhang",
+        "isOnline": true,
+        "lastSeen": "2024-01-15T10:30:00Z"
+      }
+    ],
+    "lastMessage": {
+      "Id": 55,
+      "senderId": "current-user",
+      "content": "Voice message",
+      "type": "voice",
+      "timestamp": "2024-01-14T16:30:00Z",
+      "status": "read"
+    },
+    "unreadCount": 1,
+    "isPinned": true,
+    "isArchived": false,
+    "theme": {
+      "background": "#ffffff",
+      "accent": "#e74c3c"
+    }
+  },
+  {
+    "Id": 6,
+    "participants": [
+      {
+        "id": "current-user",
+        "name": "John Doe"
+      },
+      {
+        "id": "user-7",
+        "name": "Alex Thompson",
+        "isOnline": false,
+        "lastSeen": "2024-01-14T12:00:00Z"
+      }
+    ],
+    "lastMessage": {
+      "Id": 65,
+      "senderId": "user-7",
+      "content": "📸 Photo",
+      "type": "image",
+      "timestamp": "2024-01-14T11:45:00Z",
+      "status": "read"
+    },
+    "unreadCount": 0,
+    "isPinned": false,
+    "isArchived": false,
+    "theme": {
+      "background": "#ffffff",
+      "accent": "#3498db"
+    }
+  }
+]

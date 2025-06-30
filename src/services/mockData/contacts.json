@@ -1,0 +1,122 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Wilson",
+    "avatar": null,
+    "status": "Product Designer at TechCorp",
+    "lastSeen": "2024-01-15T10:30:00Z",
+    "isOnline": true
+  },
+  {
+    "Id": 2,
+    "name": "Mike Chen",
+    "avatar": null,
+    "status": "Senior Developer - Always coding",
+    "lastSeen": "2024-01-15T09:15:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 3,
+    "name": "Emily Rodriguez",
+    "avatar": null,
+    "status": "UI/UX Designer 🎨",
+    "lastSeen": "2024-01-15T10:30:00Z",
+    "isOnline": true
+  },
+  {
+    "Id": 4,
+    "name": "David Park",
+    "avatar": null,
+    "status": "Database Architect",
+    "lastSeen": "2024-01-14T18:30:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Zhang",
+    "avatar": null,
+    "status": "Product Manager | Building the future",
+    "lastSeen": "2024-01-15T10:30:00Z",
+    "isOnline": true
+  },
+  {
+    "Id": 6,
+    "name": "Alex Thompson",
+    "avatar": null,
+    "status": "Adventure seeker 🏔️",
+    "lastSeen": "2024-01-14T12:00:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 7,
+    "name": "Rachel Kim",
+    "avatar": null,
+    "status": "Marketing Specialist",
+    "lastSeen": "2024-01-15T08:45:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 8,
+    "name": "James Mitchell",
+    "avatar": null,
+    "status": "DevOps Engineer ⚙️",
+    "lastSeen": "2024-01-15T07:20:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 9,
+    "name": "Sophie Turner",
+    "avatar": null,
+    "status": "QA Lead - Quality first!",
+    "lastSeen": "2024-01-15T09:30:00Z",
+    "isOnline": true
+  },
+  {
+    "Id": 10,
+    "name": "Ryan O'Connor",
+    "avatar": null,
+    "status": "Security Specialist 🔐",
+    "lastSeen": "2024-01-14T22:15:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 11,
+    "name": "Maya Patel",
+    "avatar": null,
+    "status": "Data Scientist 📊",
+    "lastSeen": "2024-01-15T06:30:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 12,
+    "name": "Carlos Mendez",
+    "avatar": null,
+    "status": "Mobile Developer 📱",
+    "lastSeen": "2024-01-15T10:15:00Z",
+    "isOnline": true
+  },
+  {
+    "Id": 13,
+    "name": "Anna Kowalski",
+    "avatar": null,
+    "status": "Frontend Architect",
+    "lastSeen": "2024-01-15T08:00:00Z",
+    "isOnline": false
+  },
+  {
+    "Id": 14,
+    "name": "Tom Bradley",
+    "avatar": null,
+    "status": "Tech Lead 🚀",
+    "lastSeen": "2024-01-15T09:45:00Z",
+    "isOnline": true
+  },
+  {
+    "Id": 15,
+    "name": "Zoe Williams",
+    "avatar": null,
+    "status": "Content Strategist ✍️",
+    "lastSeen": "2024-01-14T16:30:00Z",
+    "isOnline": false
+  }
+]

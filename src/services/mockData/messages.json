@@ -1,0 +1,424 @@
+[
+  {
+    "Id": 1,
+    "chatId": "1",
+    "senderId": "current-user",
+    "content": "Hey Sarah! How's the project coming along?",
+    "type": "text",
+    "timestamp": "2024-01-15T09:00:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 2,
+    "chatId": "1",
+    "senderId": "user-2",
+    "content": "Hi John! It's going well. I finished the wireframes yesterday.",
+    "type": "text",
+    "timestamp": "2024-01-15T09:05:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "👍",
+        "userId": "current-user",
+        "timestamp": "2024-01-15T09:06:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "chatId": "1",
+    "senderId": "current-user",
+    "content": "That's awesome! Can you show me the designs?",
+    "type": "text",
+    "timestamp": "2024-01-15T09:10:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 4,
+    "chatId": "1",
+    "senderId": "user-2",
+    "content": "project-wireframes.pdf",
+    "type": "file",
+    "timestamp": "2024-01-15T09:15:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 5,
+    "chatId": "1",
+    "senderId": "user-2",
+    "content": "Here are the wireframes. Let me know what you think!",
+    "type": "text",
+    "timestamp": "2024-01-15T09:16:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "🔥",
+        "userId": "current-user",
+        "timestamp": "2024-01-15T09:18:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 6,
+    "chatId": "1",
+    "senderId": "current-user",
+    "content": "These look fantastic! I love the clean layout and the user flow is very intuitive.",
+    "type": "text",
+    "timestamp": "2024-01-15T09:25:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "❤️",
+        "userId": "user-2",
+        "timestamp": "2024-01-15T09:26:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 7,
+    "chatId": "1",
+    "senderId": "user-2",
+    "content": "Thank you! I'm really happy with how they turned out. Should we schedule a meeting to discuss the next steps?",
+    "type": "text",
+    "timestamp": "2024-01-15T09:30:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 8,
+    "chatId": "1",
+    "senderId": "current-user",
+    "content": "Absolutely! How about this afternoon around 3 PM?",
+    "type": "text",
+    "timestamp": "2024-01-15T09:35:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 15,
+    "chatId": "1",
+    "senderId": "user-2",
+    "content": "Perfect! See you at 3 PM then. I'll bring the project files.",
+    "type": "text",
+    "timestamp": "2024-01-15T10:45:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 21,
+    "chatId": "2",
+    "senderId": "user-3",
+    "content": "Hey John, I reviewed your pull request. Overall looks good, but I have a few suggestions.",
+    "type": "text",
+    "timestamp": "2024-01-15T08:30:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 22,
+    "chatId": "2",
+    "senderId": "current-user",
+    "content": "Great! What are your thoughts?",
+    "type": "text",
+    "timestamp": "2024-01-15T08:35:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 23,
+    "chatId": "2",
+    "senderId": "user-3",
+    "content": "The algorithm looks solid, but I think we can optimize the database queries. Maybe add some caching?",
+    "type": "text",
+    "timestamp": "2024-01-15T08:40:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "🤔",
+        "userId": "current-user",
+        "timestamp": "2024-01-15T08:41:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 24,
+    "chatId": "2",
+    "senderId": "current-user",
+    "content": "That's a good point. I'll implement Redis caching for the frequently accessed data.",
+    "type": "text",
+    "timestamp": "2024-01-15T08:45:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "👍",
+        "userId": "user-3",
+        "timestamp": "2024-01-15T08:46:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 25,
+    "chatId": "2",
+    "senderId": "current-user",
+    "content": "Thanks for the code review! I'll implement those changes today.",
+    "type": "text",
+    "timestamp": "2024-01-15T09:20:00Z",
+    "status": "delivered",
+    "reactions": []
+  },
+  {
+    "Id": 31,
+    "chatId": "3",
+    "senderId": "user-4",
+    "content": "John! I just finished the new landing page designs 🎨",
+    "type": "text",
+    "timestamp": "2024-01-15T08:00:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "🔥",
+        "userId": "current-user",
+        "timestamp": "2024-01-15T08:02:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 32,
+    "chatId": "3",
+    "senderId": "current-user",
+    "content": "Wow, can't wait to see them! Send them over when you're ready.",
+    "type": "text",
+    "timestamp": "2024-01-15T08:05:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 33,
+    "chatId": "3",
+    "senderId": "user-4",
+    "content": "landing-page-mockup.png",
+    "type": "image",
+    "timestamp": "2024-01-15T08:10:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "😮",
+        "userId": "current-user",
+        "timestamp": "2024-01-15T08:12:00Z"
+      },
+      {
+        "emoji": "💯",
+        "userId": "current-user",
+        "timestamp": "2024-01-15T08:12:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 34,
+    "chatId": "3",
+    "senderId": "current-user",
+    "content": "This is incredible, Emily! The color scheme and typography work perfectly together.",
+    "type": "text",
+    "timestamp": "2024-01-15T08:15:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "😊",
+        "userId": "user-4",
+        "timestamp": "2024-01-15T08:16:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 35,
+    "chatId": "3",
+    "senderId": "user-4",
+    "content": "The design mockups look amazing! 🎨 Can we schedule a call to discuss the implementation details?",
+    "type": "text",
+    "timestamp": "2024-01-15T08:45:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 41,
+    "chatId": "4",
+    "senderId": "current-user",
+    "content": "David, we need to update the user table schema for the new features.",
+    "type": "text",
+    "timestamp": "2024-01-14T16:00:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 42,
+    "chatId": "4",
+    "senderId": "user-5",
+    "content": "Sure! What changes do we need to make?",
+    "type": "text",
+    "timestamp": "2024-01-14T16:05:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 43,
+    "chatId": "4",
+    "senderId": "current-user",
+    "content": "We need to add fields for user preferences, notification settings, and the new profile customization options.",
+    "type": "text",
+    "timestamp": "2024-01-14T16:10:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 44,
+    "chatId": "4",
+    "senderId": "current-user",
+    "content": "migration-script.sql",
+    "type": "file",
+    "timestamp": "2024-01-14T16:12:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 45,
+    "chatId": "4",
+    "senderId": "user-5",
+    "content": "Got it! I'll update the database schema and let you know when it's ready for testing.",
+    "type": "text",
+    "timestamp": "2024-01-14T17:15:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "👍",
+        "userId": "current-user",
+        "timestamp": "2024-01-14T17:16:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 51,
+    "chatId": "5",
+    "senderId": "user-6",
+    "content": "John, I have some feedback on the new chat features we discussed.",
+    "type": "text",
+    "timestamp": "2024-01-14T15:30:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 52,
+    "chatId": "5",
+    "senderId": "current-user",
+    "content": "I'd love to hear your thoughts! What do you think?",
+    "type": "text",
+    "timestamp": "2024-01-14T15:35:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 53,
+    "chatId": "5",
+    "senderId": "user-6",
+    "content": "Voice message: The message reactions are great, but I think we should also add message scheduling...",
+    "type": "voice",
+    "timestamp": "2024-01-14T15:40:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "💡",
+        "userId": "current-user",
+        "timestamp": "2024-01-14T15:42:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 54,
+    "chatId": "5",
+    "senderId": "current-user",
+    "content": "That's a brilliant idea! Message scheduling would be really useful for cross-timezone teams.",
+    "type": "text",
+    "timestamp": "2024-01-14T15:45:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 55,
+    "chatId": "5",
+    "senderId": "current-user",
+    "content": "Voice message: I'll add message scheduling to our backlog and we can prioritize it for the next sprint...",
+    "type": "voice",
+    "timestamp": "2024-01-14T16:30:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 61,
+    "chatId": "6",
+    "senderId": "user-7",
+    "content": "Check out this awesome sunset from my hike yesterday! 🌅",
+    "type": "text",
+    "timestamp": "2024-01-14T11:00:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 62,
+    "chatId": "6",
+    "senderId": "user-7",
+    "content": "sunset-mountain-view.jpg",
+    "type": "image",
+    "timestamp": "2024-01-14T11:02:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "😮",
+        "userId": "current-user",
+        "timestamp": "2024-01-14T11:10:00Z"
+      },
+      {
+        "emoji": "🔥",
+        "userId": "current-user",
+        "timestamp": "2024-01-14T11:10:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 63,
+    "chatId": "6",
+    "senderId": "current-user",
+    "content": "Alex, that's absolutely stunning! Where did you hike?",
+    "type": "text",
+    "timestamp": "2024-01-14T11:15:00Z",
+    "status": "read",
+    "reactions": []
+  },
+  {
+    "Id": 64,
+    "chatId": "6",
+    "senderId": "user-7",
+    "content": "This was at Mount Wilson trail. The view from the top is incredible, especially during golden hour!",
+    "type": "text",
+    "timestamp": "2024-01-14T11:20:00Z",
+    "status": "read",
+    "reactions": [
+      {
+        "emoji": "🏔️",
+        "userId": "current-user",
+        "timestamp": "2024-01-14T11:22:00Z"
+      }
+    ]
+  },
+  {
+    "Id": 65,
+    "chatId": "6",
+    "senderId": "user-7",
+    "content": "trail-map.jpg",
+    "type": "image",
+    "timestamp": "2024-01-14T11:45:00Z",
+    "status": "read",
+    "reactions": []
+  }
+]
