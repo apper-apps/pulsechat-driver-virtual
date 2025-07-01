@@ -151,16 +151,16 @@ const SettingsPanel = ({ settings, onSettingChange }) => {
   ];
 
   return (
-    <div className="flex flex-col h-full">
+<div className="flex flex-col h-full">
       {/* Header */}
-      <div className="p-4 border-b border-surface-200">
+      <div className="p-3 border-b border-surface-200">
         <h2 className="text-xl font-display font-bold text-gray-900">Settings</h2>
         <p className="text-gray-600 text-sm mt-1">Customize your PulseChat experience</p>
       </div>
 
-      {/* Settings Sections */}
+{/* Settings Sections */}
       <div className="flex-1 overflow-y-auto custom-scrollbar">
-        <div className="space-y-6 p-4">
+        <div className="space-y-4 p-3">
           {sections.map((section) => (
             <SettingsSection
               key={section.title}
@@ -171,9 +171,8 @@ const SettingsPanel = ({ settings, onSettingChange }) => {
           ))}
         </div>
       </div>
-
-      {/* Footer */}
-      <div className="p-4 border-t border-surface-200 text-center">
+{/* Footer */}
+      <div className="p-3 border-t border-surface-200 text-center">
         <p className="text-sm text-gray-500">PulseChat v2.1.0</p>
         <p className="text-xs text-gray-400 mt-1">Enhanced Messaging Experience</p>
       </div>

@@ -29,8 +29,8 @@ const MessageList = ({ messages, onReaction }) => {
     return groups;
   }, []);
 
-  return (
-    <div className="flex-1 overflow-y-auto custom-scrollbar p-4 space-y-4">
+return (
+    <div className="flex-1 overflow-y-auto custom-scrollbar p-3 space-y-3">
       <AnimatePresence>
         {groupedMessages.map((group, groupIndex) => (
           <div key={group.date} className="space-y-2">

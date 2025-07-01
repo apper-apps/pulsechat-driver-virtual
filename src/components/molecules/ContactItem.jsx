@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 const ContactItem = ({ contact }) => {
   return (
-    <motion.div
-      className="p-4 hover:bg-surface-100 transition-colors cursor-pointer"
+<motion.div
+      className="p-3 hover:bg-surface-100 transition-colors cursor-pointer"
       whileHover={{ x: 4 }}
     >
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-2">
         {/* Avatar */}
         <div className="relative flex-shrink-0">
           <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-semibold">

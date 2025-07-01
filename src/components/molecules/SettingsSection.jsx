@@ -8,8 +8,8 @@ const SettingsSection = ({ title, icon, items }) => {
   const renderItem = (item) => {
     switch (item.type) {
       case 'profile':
-        return (
-          <div className="flex items-center space-x-4 p-4 bg-surface-50 rounded-xl">
+return (
+          <div className="flex items-center space-x-3 p-3 bg-surface-50 rounded-xl">
             <div className="w-16 h-16 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
               {item.data.name.charAt(0)}
             </div>
@@ -23,9 +23,9 @@ const SettingsSection = ({ title, icon, items }) => {
           </div>
         );
       
-      case 'toggle':
+case 'toggle':
         return (
-          <div className="flex items-center justify-between py-3">
+          <div className="flex items-center justify-between py-2">
             <div className="flex-1">
               <h4 className="font-medium text-gray-900">{item.label}</h4>
               {item.description && (
@@ -39,9 +39,9 @@ const SettingsSection = ({ title, icon, items }) => {
           </div>
         );
       
-      case 'select':
+case 'select':
         return (
-          <div className="py-3">
+          <div className="py-2">
             <label className="block font-medium text-gray-900 mb-2">
               {item.label}
             </label>
@@ -56,9 +56,9 @@ const SettingsSection = ({ title, icon, items }) => {
           </div>
         );
       
-      case 'button':
+case 'button':
         return (
-          <div className="py-3">
+          <div className="py-2">
             <Button
               variant="outline"
               onClick={item.action}
@@ -89,8 +89,8 @@ const SettingsSection = ({ title, icon, items }) => {
         </div>
       </div>
 
-      {/* Section Items */}
-      <div className="px-4 py-2">
+{/* Section Items */}
+      <div className="px-3 py-1">
         {items.map((item, index) => (
           <div key={index} className={index < items.length - 1 ? 'border-b border-surface-100' : ''}>
             {renderItem(item)}

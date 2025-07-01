@@ -45,9 +45,9 @@ function ContactList({ contacts }) {
 
   return (
     <div className="flex flex-col h-full">
-      {/* Header */}
-      <div className="p-4 border-b border-surface-200">
-        <div className="flex items-center justify-between mb-4">
+{/* Header */}
+      <div className="p-3 border-b border-surface-200">
+        <div className="flex items-center justify-between mb-3">
           <h2 className="text-xl font-display font-bold text-gray-900">Contacts</h2>
           <div className="flex items-center space-x-2">
 <button className="p-2 hover:bg-surface-100 rounded-xl transition-colors group">
@@ -119,8 +119,8 @@ function ContactList({ contacts }) {
         />
       </div>
 
-      {/* Stats */}
-      <div className="px-4 py-3 border-b border-surface-200">
+{/* Stats */}
+      <div className="px-3 py-2 border-b border-surface-200">
         <div className="flex items-center justify-between text-sm">
           <span className="text-gray-600">
             {filteredContacts.length} contact{filteredContacts.length !== 1 ? 's' : ''}
@@ -143,11 +143,11 @@ function ContactList({ contacts }) {
               {searchTerm ? 'Try a different search term' : 'Add some contacts to get started'}
             </p>
           </div>
-        ) : (
-          <div className="py-2">
+) : (
+          <div className="py-1">
             {sortedGroups.map((letter) => (
-              <div key={letter} className="mb-2">
-                <div className="px-4 py-2 bg-surface-100 border-b border-surface-200">
+              <div key={letter} className="mb-1">
+                <div className="px-3 py-2 bg-surface-100 border-b border-surface-200">
                   <h3 className="font-semibold text-gray-700 text-sm">{letter}</h3>
                 </div>
                 <div className="space-y-1">
