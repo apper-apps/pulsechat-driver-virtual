@@ -31,9 +31,9 @@ const Layout = () => {
         <div className="fixed inset-0 z-50 md:hidden">
           <div 
             className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-sm"
-            onClick={() => setIsMobileMenuOpen(false)}
+onClick={() => setIsMobileMenuOpen(false)}
           />
-          <div className="absolute left-0 top-0 h-full w-80 bg-white shadow-2xl">
+          <div className="absolute left-0 top-0 h-full w-96 bg-white shadow-2xl">
             <Sidebar onClose={() => setIsMobileMenuOpen(false)} />
           </div>
         </div>

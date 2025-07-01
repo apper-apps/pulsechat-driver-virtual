@@ -23,10 +23,10 @@ const Sidebar = ({ onClose }) => {
     }
   ];
 
-  return (
+return (
     <motion.div 
-      className="w-80 bg-white shadow-xl border-r border-surface-200 flex flex-col h-full"
-      initial={{ x: -320 }}
+      className="w-96 bg-white shadow-xl border-r border-surface-200 flex flex-col h-full"
+      initial={{ x: -384 }}
       animate={{ x: 0 }}
       transition={{ type: "spring", damping: 25, stiffness: 200 }}
     >
