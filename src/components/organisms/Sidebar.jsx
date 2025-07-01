@@ -1,7 +1,7 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import ApperIcon from '@/components/ApperIcon';
-import { motion } from 'framer-motion';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
 
 const Sidebar = ({ onClose }) => {
   const navItems = [
@@ -34,12 +34,12 @@ const Sidebar = ({ onClose }) => {
       <div className="p-6 bg-gradient-to-r from-primary-500 to-primary-600 text-white">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center backdrop-blur-sm">
+<div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center backdrop-blur-sm">
               <ApperIcon name="MessageSquare" size={24} className="text-white" />
             </div>
             <div>
               <h1 className="text-xl font-display font-bold">PulseChat</h1>
-              <p className="text-primary-100 text-sm">Enhanced Messaging</p>
+              <p className="text-primary-100 text-sm">Messaging Platform</p>
             </div>
           </div>
           {onClose && (
